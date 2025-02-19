@@ -1,0 +1,58 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios15.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MapSDK
+import AdSupport
+import AppTrackingTransparency
+import CoreLocation
+import Foundation
+@_exported import MapSDK
+import Swift
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct MTApiShortResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MTBeacon : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MTReportResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class MTBeaconManager : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  public var status_callback: ((CoreLocation.CLAuthorizationStatus) throws -> Swift.Void)?
+  @objc override dynamic public init()
+  public func startRangeBeacons(uuids: [Foundation.UUID], callback: @escaping ([CoreLocation.CLBeacon]) throws -> Swift.Void)
+  public func stopRangeBeacons()
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didRangeBeacons beacons: [CoreLocation.CLBeacon], in region: CoreLocation.CLBeaconRegion)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
+  @objc deinit
+}
+@objc public class MTMapOptions : ObjectiveC.NSObject {
+  public static func production_default_options(uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String, signature_version: Swift.String) -> MapSDK.MTMapOptions
+  public static func test_default_options(uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String, signature_version: Swift.String) -> MapSDK.MTMapOptions
+  public init(host: Swift.String, h5_url: Swift.String, uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String, signature_version: Swift.String)
+  @objc deinit
+}
+public class MTMap {
+  public var didStateChange: ((CoreLocation.CLAuthorizationStatus) throws -> Swift.Void)?
+  public init(options: MapSDK.MTMapOptions)
+  public func fetch_identifier(_ third_slug: Swift.String = "") async throws -> Swift.String
+  public func startBeaconScanning(uuids: [Swift.String]? = nil, callback: @escaping ([CoreLocation.CLBeacon]) -> Swift.Void) async throws
+  public func stopBeaconSacnning()
+  public func getMapview() -> MapSDK.MTMapView
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MTMapView : WebKit.WKWebView {
+  @_Concurrency.MainActor @preconcurrency public init(uuid: Swift.String, url: Swift.String)
+  @objc deinit
+}
+@objc public class MTNet : ObjectiveC.NSObject {
+  public init(host: Swift.String, uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String, signature_version: Swift.String)
+  public func getSortIdentifier(device_id: Swift.String, third_slug: Swift.String? = nil) async throws -> MapSDK.MTApiShortResponse
+  public func getProjectBeaconUUIDS() async throws -> [Swift.String]
+  public func reportBeacons(beacons: [MapSDK.MTBeacon], identifier: Swift.String? = nil) async throws
+  @objc deinit
+}
