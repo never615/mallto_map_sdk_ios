@@ -17,8 +17,11 @@ struct ContentView: View {
             signature_version: "999"
         )
     )
+    
    
     @State var start = false
+    @State var ble_start = false
+    @State var identifier = ""
     
     var body: some View {
             NavigationView {
@@ -27,10 +30,20 @@ struct ContentView: View {
                         Task {
                             do {
                                 let token = try await self.map.fetch_identifier()
-                                print(token)
+                                self.identifier = token
                             } catch {}
                         }
-                    }) { Text("获取用户登录") }
+                    }) { Text(identifier.isEmpty ? "获取用户登录" : "[\(self.identifier)] 已登录") }
+                        .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+                    
+                    Button(action: {
+                        self.ble_start = !self.ble_start
+                        if self.ble_start {
+                            self.map.startBleAdvertising()
+                        } else {
+                            self.map.stopBleAdvertising()
+                        }
+                    }) { Text(self.ble_start ? "停止广播" : "开始广播") }
                         .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
                     
                     Button(action: {

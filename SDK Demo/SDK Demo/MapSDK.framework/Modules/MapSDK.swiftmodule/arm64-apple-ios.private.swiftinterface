@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios15.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MapSDK
+// swift-module-flags: -target arm64-apple-ios15.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MapSDK
 import AdSupport
 import AppTrackingTransparency
+import CoreBluetooth
 import CoreLocation
 import Foundation
 @_exported import MapSDK
@@ -43,6 +44,8 @@ public class MTMap {
   public func startBeaconScanning(uuids: [Swift.String]? = nil, callback: @escaping ([CoreLocation.CLBeacon]) -> Swift.Void) async throws
   public func stopBeaconSacnning()
   public func getMapview() -> MapSDK.MTMapView
+  public func startBleAdvertising()
+  public func stopBleAdvertising()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MTMapView : WebKit.WKWebView {

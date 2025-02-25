@@ -1286,6 +1286,48 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startBleAdvertising",
+            "printedName": "startBleAdvertising()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6MapSDK5MTMapC19startBleAdvertisingyyF",
+            "mangledName": "$s6MapSDK5MTMapC19startBleAdvertisingyyF",
+            "moduleName": "MapSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopBleAdvertising",
+            "printedName": "stopBleAdvertising()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6MapSDK5MTMapC18stopBleAdvertisingyyF",
+            "mangledName": "$s6MapSDK5MTMapC18stopBleAdvertisingyyF",
+            "moduleName": "MapSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1311,6 +1353,30 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "MapSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MapSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MapSDK"
       },
       {
         "kind": "Import",
@@ -1812,7 +1878,7 @@
     {
       "filePath": "\/Users\/silence\/Documents\/mallto\/MapSDK\/MapSDK\/MTMap.swift",
       "kind": "StringLiteral",
-      "offset": 3024,
+      "offset": 3123,
       "length": 2,
       "value": "\"\""
     }

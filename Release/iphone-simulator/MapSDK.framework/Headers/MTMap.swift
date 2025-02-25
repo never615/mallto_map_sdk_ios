@@ -76,6 +76,7 @@ public class MTMap {
     private var net: MTNet;
     private var beaconManager: MTBeaconManager;
     private var identifier: String;
+    private var bleAdvertising: MTBleAdvertising;
     
     public var didStateChange: ((CLAuthorizationStatus) throws -> Void)?;
     
@@ -87,6 +88,7 @@ public class MTMap {
                          app_secret: options.app_secret,
                          signature_version: options.signature_version)
         self.beaconManager = MTBeaconManager()
+        self.bleAdvertising = MTBleAdvertising()
         self.identifier = ""
         
         self.beaconManager.status_callback = { status in
@@ -175,8 +177,8 @@ public class MTMap {
             };
         }
         self.beaconManager.startRangeBeacons(uuids: start_uuids!) { beacons in
-            debugPrint(beacons)
-            
+            // 如果扫描不到beacon，则不返回
+            if (beacons.count == 0) { return }
             // 上报beacon数据到服务器
             Task {
                 do {
@@ -190,6 +192,7 @@ public class MTMap {
                         )
                     }
                     try await self.net.reportBeacons(beacons: reportBeacons, identifier: self.identifier)
+                    
                 } catch {
                     print("上报beacon数据失败")
                 }
@@ -219,5 +222,19 @@ public class MTMap {
             url = "\(self.options.h5_url)?uuid=\(self.options.uuid)"
         }
         return MTMapView(uuid: options.uuid, url: url)
+    }
+    
+    ///
+    ///   Start Ble Advertising
+    ///
+    public func startBleAdvertising() {
+        self.bleAdvertising.startAdvertising(short_id: self.identifier)
+    }
+    
+    ///
+    ///   Stop Ble Advertising
+    ///
+    public func stopBleAdvertising() {
+        self.bleAdvertising.stopAdvertising();
     }
 }

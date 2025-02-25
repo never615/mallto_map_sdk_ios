@@ -257,8 +257,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "允许应用在任何时候使用蓝牙广播";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "允许应用在使用期间使用蓝牙广播";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "允许应用在使用期间访问位置信息";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "允许应用在任何时候访问位置信息";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "允许应用在使用期间访问位置信息";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "允许应用在使用期间可以访问IDFA";
@@ -267,6 +273,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -274,6 +281,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mall-to.SDK-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,8 +304,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "允许应用在任何时候使用蓝牙广播";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "允许应用在使用期间使用蓝牙广播";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "允许应用在使用期间访问位置信息";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "允许应用在任何时候访问位置信息";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "允许应用在使用期间访问位置信息";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "允许应用在使用期间可以访问IDFA";
@@ -303,6 +320,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +328,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mall-to.SDK-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
