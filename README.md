@@ -54,6 +54,22 @@ func startBeaconScanning(uuids: [String]? = nil, callback: @escaping ([CLBeacon]
 func stopBeaconScanning()
 ```
 
+##### 开始aoa广播
+```swift
+//
+// 开始aoa广播
+// 
+func startBleAdvertising()
+```
+
+##### 停止aoa广播
+```swift
+//
+// 停止aoa广播
+// 
+func stopBleAdvertising()
+```
+
 
 ##### 获取地图Mapview
 ```swift
