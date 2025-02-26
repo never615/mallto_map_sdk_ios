@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MTMap.swift</key>
 		<data>
-		ypDLt5cGuXR1vf1U3MztGAVlQiw=
+		wrMquDyignrjVf71n1Zx0kaOeEE=
 		</data>
 		<key>Headers/MapSDK.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Modules/MapSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		BBafp0dXt4dEdFJvZe7bsiDDIbI=
+		ukjfhTk9q3F70QrKkLgy67uTKrE=
 		</data>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		rZsi7P6PTBqully6SxGQhGi1pZM=
+		djPJOHRNq+CniVqV/U5hhHsVlPI=
 		</data>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		4jkLhkfiBHaecmFFbWtV5+gykPo=
+		YqbMUpAtIn+1NKqdh87Rxzm9QOY=
 		</data>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4jkLhkfiBHaecmFFbWtV5+gykPo=
+		YqbMUpAtIn+1NKqdh87Rxzm9QOY=
 		</data>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		i0dXK/DzTElST4YFrfclX1Jrn28=
+		dD0dwLclXboYuGt+aDCBrRgAZdU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ypDLt5cGuXR1vf1U3MztGAVlQiw=
+			wrMquDyignrjVf71n1Zx0kaOeEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			DV76GS0HhXqE6sZihtU/LjwjlFKKNzKfLj9h9Q41KFU=
+			mOw4m/Yv3p+qAznMgcQb4X7JbL4H2SKV1/iTpi5X/Rw=
 			</data>
 		</dict>
 		<key>Headers/MapSDK.h</key>
@@ -73,33 +73,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BBafp0dXt4dEdFJvZe7bsiDDIbI=
+			ukjfhTk9q3F70QrKkLgy67uTKrE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/LDxfC/cqM1lFBm/3BvCU5eQ1Pbm4IzhRJVIy8l1FSA=
+			7ai4TaClunStCmFs/+sgCZwi/GrbzGI+W74i8Vl47oU=
 			</data>
 		</dict>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rZsi7P6PTBqully6SxGQhGi1pZM=
+			djPJOHRNq+CniVqV/U5hhHsVlPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Clx6nFTiVtlgzwgplDFc1ar4ErL4ZYSpcTVlGS6ip3E=
+			4DgMvoDVHC0ZFlEa5OO2s7NK0XNbM+7rIX59tbgMXqA=
 			</data>
 		</dict>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4jkLhkfiBHaecmFFbWtV5+gykPo=
+			YqbMUpAtIn+1NKqdh87Rxzm9QOY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dl1iip/8TEzy0Xqmv7MUlZITtEZp18z3/V71gP6q+rI=
+			TzXVza+6ck2nbsHQCanQgJY3Fx9I6Rswb7beFMHqhzo=
 			</data>
 		</dict>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -117,22 +117,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4jkLhkfiBHaecmFFbWtV5+gykPo=
+			YqbMUpAtIn+1NKqdh87Rxzm9QOY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dl1iip/8TEzy0Xqmv7MUlZITtEZp18z3/V71gP6q+rI=
+			TzXVza+6ck2nbsHQCanQgJY3Fx9I6Rswb7beFMHqhzo=
 			</data>
 		</dict>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i0dXK/DzTElST4YFrfclX1Jrn28=
+			dD0dwLclXboYuGt+aDCBrRgAZdU=
 			</data>
 			<key>hash2</key>
 			<data>
-			jb/87+GoDcfLkzxhkDNSb4UXH+GcP46ebGLB/PUJ9uA=
+			ea0ETh43qJYqmuWLyLsfESc92aBB9CsIQQmqPnKXQwA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -15,7 +15,8 @@ import _SwiftConcurrencyShims
 public struct MTApiShortResponse : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct MTBeacon : Swift.Decodable {
+public struct MTBeacon : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct MTReportResponse : Swift.Decodable {
@@ -48,8 +49,10 @@ public class MTMap {
   public func stopBleAdvertising()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MTMapView : WebKit.WKWebView {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MTMapView : WebKit.WKWebView, WebKit.WKUIDelegate {
   @_Concurrency.MainActor @preconcurrency public init(uuid: Swift.String, url: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping @_Concurrency.MainActor (WebKit.WKPermissionDecision) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestDeviceOrientationAndMotionPermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, decisionHandler: @escaping @_Concurrency.MainActor (WebKit.WKPermissionDecision) -> Swift.Void)
   @objc deinit
 }
 @objc public class MTNet : ObjectiveC.NSObject {

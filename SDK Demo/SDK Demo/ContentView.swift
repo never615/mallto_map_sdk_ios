@@ -53,7 +53,7 @@ struct ContentView: View {
                             Task {
                                 do {
                                     try await self.map.startBeaconScanning { beacons in
-                                        print(beacons)
+//                                        print(beacons)
                                     }
                                 } catch {}
                             }
