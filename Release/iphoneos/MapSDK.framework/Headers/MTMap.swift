@@ -191,7 +191,6 @@ public class MTMap {
                             accuracy: Float(beacon.accuracy)
                         )
                     }
-                    debugPrint(reportBeacons)
                     try await self.net.reportBeacons(beacons: reportBeacons, identifier: self.identifier)
                     
                 } catch {
