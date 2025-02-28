@@ -217,7 +217,7 @@ public class MTMap {
     public func getMapview() -> MTMapView {
         let url: String
         if (!identifier.isEmpty) {
-            url = "\(self.options.h5_url)?uuid=\(self.options.uuid)&type=user_uuid&type_id=\(String(describing: identifier))"
+            url = "\(self.options.h5_url)?uuid=\(self.options.uuid)&type=mac&type_id=\(String(describing: identifier))"
         } else {
             url = "\(self.options.h5_url)?uuid=\(self.options.uuid)"
         }

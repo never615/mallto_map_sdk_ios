@@ -274,6 +274,8 @@
 					"$(PROJECT_DIR)/SDK\\ Demo",
 					"$(PROJECT_DIR)/SDK\\ Demo",
 					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "允许应用在任何时候使用蓝牙广播";
@@ -317,6 +319,8 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/SDK\\ Demo",
+					"$(PROJECT_DIR)/SDK\\ Demo",
 					"$(PROJECT_DIR)/SDK\\ Demo",
 					"$(PROJECT_DIR)/SDK\\ Demo",
 					"$(PROJECT_DIR)/SDK\\ Demo",

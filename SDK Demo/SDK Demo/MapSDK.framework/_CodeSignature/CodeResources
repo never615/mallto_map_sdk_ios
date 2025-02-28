@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MTMap.swift</key>
 		<data>
-		ypDLt5cGuXR1vf1U3MztGAVlQiw=
+		0w3nkWjD0t0bE03isNq8gZ2i5LQ=
 		</data>
 		<key>Headers/MapSDK.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/MapSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		UUd5rUshomODZRhot1ATfCRZ1Vw=
+		NJ2+BJ+y0Uk9edG8Xh9EWZThoLY=
 		</data>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ypDLt5cGuXR1vf1U3MztGAVlQiw=
+			0w3nkWjD0t0bE03isNq8gZ2i5LQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			DV76GS0HhXqE6sZihtU/LjwjlFKKNzKfLj9h9Q41KFU=
+			Hbxp3XCkXeTzNI3O4x1b2PAs1nWABdyUEHz0ks+sWfQ=
 			</data>
 		</dict>
 		<key>Headers/MapSDK.h</key>
@@ -73,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UUd5rUshomODZRhot1ATfCRZ1Vw=
+			NJ2+BJ+y0Uk9edG8Xh9EWZThoLY=
 			</data>
 			<key>hash2</key>
 			<data>
-			umKhpsKmFlmK31IrmSufi34iWmrAopALSPeb3PQ/Wec=
+			jYevQr3H5BQLupizGOT6E36Q/znICZobmGrYWZ9wEhQ=
 			</data>
 		</dict>
 		<key>Modules/MapSDK.swiftmodule/arm64-apple-ios.abi.json</key>
