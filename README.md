@@ -30,7 +30,7 @@ var map = MTMap(options: MTMapOptions)
 //
 // 获取ID
 // 
-//  @param third_slug  第三方用户标识，可空
+//  @param third_slug 【可选】获取设备唯一标识(通过手机广告 id 生成),支持关联第三方系统的用户唯一标识,如email/mobile/user_id等
 // 
 func fetch_identifier(_ third_slug: String = "") async throws -> String
 ```
