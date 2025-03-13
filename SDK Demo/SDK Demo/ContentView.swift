@@ -13,8 +13,7 @@ struct ContentView: View {
         options: MTMapOptions.test_default_options(
             uuid: "4012",
             app_id: "999",
-            app_secret: "testsecret",
-            signature_version: "999"
+            app_secret: "testsecret"
         )
     )
     

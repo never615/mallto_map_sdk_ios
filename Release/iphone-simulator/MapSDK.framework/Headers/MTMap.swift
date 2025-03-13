@@ -21,35 +21,30 @@ public class MTMapOptions: NSObject {
     var uuid: String;
     var app_id: String;
     var app_secret: String;
-    var signature_version: String;
     var host: String;
     var h5_url: String;
     
     static public func production_default_options(uuid: String,
                                                   app_id: String,
-                                                  app_secret: String,
-                                                  signature_version: String) -> MTMapOptions {
+                                                  app_secret: String) -> MTMapOptions {
         return MTMapOptions(
             host: "https://m.mall-to.com",
             h5_url: "https://h5-test.mall-to.com/test/map/",
             uuid: uuid,
             app_id: app_id,
-            app_secret: app_secret,
-            signature_version: signature_version
+            app_secret: app_secret
         );
     }
     
     static public func test_default_options(uuid: String,
                                             app_id: String,
-                                            app_secret: String,
-                                            signature_version: String) -> MTMapOptions {
+                                            app_secret: String) -> MTMapOptions {
         return MTMapOptions(
             host: "https://test-easy.mall-to.com",
             h5_url: "https://h5-test.mall-to.com/test/map/",
             uuid: uuid,
             app_id: app_id,
-            app_secret: app_secret,
-            signature_version: signature_version
+            app_secret: app_secret
         );
     }
     
@@ -57,15 +52,13 @@ public class MTMapOptions: NSObject {
                 h5_url: String,
                 uuid: String,
                 app_id: String,
-                app_secret: String,
-                signature_version: String
+                app_secret: String
     ) {
         self.h5_url = h5_url;
         self.host = host;
         self.uuid = uuid;
         self.app_id = app_id;
         self.app_secret = app_secret;
-        self.signature_version = signature_version;
     }
 }
 
@@ -86,7 +79,7 @@ public class MTMap {
                          uuid: options.uuid,
                          app_id: options.app_id,
                          app_secret: options.app_secret,
-                         signature_version: options.signature_version)
+                         signature_version: "4")
         self.beaconManager = MTBeaconManager()
         self.bleAdvertising = MTBleAdvertising()
         self.identifier = ""

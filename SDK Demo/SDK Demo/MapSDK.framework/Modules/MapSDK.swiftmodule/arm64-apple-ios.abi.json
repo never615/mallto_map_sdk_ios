@@ -768,7 +768,7 @@
           {
             "kind": "Function",
             "name": "production_default_options",
-            "printedName": "production_default_options(uuid:app_id:app_secret:signature_version:)",
+            "printedName": "production_default_options(uuid:app_id:app_secret:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -793,17 +793,11 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6MapSDK12MTMapOptionsC26production_default_options4uuid6app_id0I7_secret17signature_versionACSS_S3StFZ",
-            "mangledName": "$s6MapSDK12MTMapOptionsC26production_default_options4uuid6app_id0I7_secret17signature_versionACSS_S3StFZ",
+            "usr": "s:6MapSDK12MTMapOptionsC26production_default_options4uuid6app_id0I7_secretACSS_S2StFZ",
+            "mangledName": "$s6MapSDK12MTMapOptionsC26production_default_options4uuid6app_id0I7_secretACSS_S2StFZ",
             "moduleName": "MapSDK",
             "static": true,
             "declAttributes": [
@@ -815,19 +809,13 @@
           {
             "kind": "Function",
             "name": "test_default_options",
-            "printedName": "test_default_options(uuid:app_id:app_secret:signature_version:)",
+            "printedName": "test_default_options(uuid:app_id:app_secret:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "MTMapOptions",
                 "printedName": "MapSDK.MTMapOptions",
                 "usr": "c:@M@MapSDK@objc(cs)MTMapOptions"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -849,8 +837,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6MapSDK12MTMapOptionsC20test_default_options4uuid6app_id0I7_secret17signature_versionACSS_S3StFZ",
-            "mangledName": "$s6MapSDK12MTMapOptionsC20test_default_options4uuid6app_id0I7_secret17signature_versionACSS_S3StFZ",
+            "usr": "s:6MapSDK12MTMapOptionsC20test_default_options4uuid6app_id0I7_secretACSS_S2StFZ",
+            "mangledName": "$s6MapSDK12MTMapOptionsC20test_default_options4uuid6app_id0I7_secretACSS_S2StFZ",
             "moduleName": "MapSDK",
             "static": true,
             "declAttributes": [
@@ -862,19 +850,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(host:h5_url:uuid:app_id:app_secret:signature_version:)",
+            "printedName": "init(host:h5_url:uuid:app_id:app_secret:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "MTMapOptions",
                 "printedName": "MapSDK.MTMapOptions",
                 "usr": "c:@M@MapSDK@objc(cs)MTMapOptions"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -908,8 +890,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6MapSDK12MTMapOptionsC4host6h5_url4uuid6app_id0I7_secret17signature_versionACSS_S5Stcfc",
-            "mangledName": "$s6MapSDK12MTMapOptionsC4host6h5_url4uuid6app_id0I7_secret17signature_versionACSS_S5Stcfc",
+            "usr": "s:6MapSDK12MTMapOptionsC4host6h5_url4uuid6app_id0I7_secretACSS_S4Stcfc",
+            "mangledName": "$s6MapSDK12MTMapOptionsC4host6h5_url4uuid6app_id0I7_secretACSS_S4Stcfc",
             "moduleName": "MapSDK",
             "declAttributes": [
               "AccessControl"
@@ -1737,6 +1719,13 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "MapSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Alamofire",
         "printedName": "Alamofire",
         "declKind": "Import",
@@ -2036,7 +2025,7 @@
     {
       "filePath": "\/Users\/silence\/Documents\/mallto\/MapSDK\/MapSDK\/MTMap.swift",
       "kind": "StringLiteral",
-      "offset": 3123,
+      "offset": 2723,
       "length": 2,
       "value": "\"\""
     }

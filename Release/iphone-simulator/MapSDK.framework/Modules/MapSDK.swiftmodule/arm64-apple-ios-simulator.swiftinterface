@@ -5,6 +5,7 @@ import AdSupport
 import AppTrackingTransparency
 import CoreBluetooth
 import CoreLocation
+import CryptoKit
 import Foundation
 @_exported import MapSDK
 import Swift
@@ -33,9 +34,9 @@ public struct MTReportResponse : Swift.Decodable {
   @objc deinit
 }
 @objc public class MTMapOptions : ObjectiveC.NSObject {
-  public static func production_default_options(uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String, signature_version: Swift.String) -> MapSDK.MTMapOptions
-  public static func test_default_options(uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String, signature_version: Swift.String) -> MapSDK.MTMapOptions
-  public init(host: Swift.String, h5_url: Swift.String, uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String, signature_version: Swift.String)
+  public static func production_default_options(uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String) -> MapSDK.MTMapOptions
+  public static func test_default_options(uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String) -> MapSDK.MTMapOptions
+  public init(host: Swift.String, h5_url: Swift.String, uuid: Swift.String, app_id: Swift.String, app_secret: Swift.String)
   @objc deinit
 }
 public class MTMap {
