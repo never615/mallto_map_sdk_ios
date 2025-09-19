@@ -160,6 +160,9 @@ public class MTMap {
     ///
     ///
     public func startBeaconScanning(uuids: [String]? = nil, callback: @escaping ([CLBeacon]) -> Void) async throws -> Void {
+        if self.bleAdvertising.started {
+            fatalError("Beacon scanning cannot be started while advertising is active.")
+        }
         var start_uuids = uuids?.map({ uuid in
             return UUID(uuidString: uuid)!
         });
@@ -221,6 +224,9 @@ public class MTMap {
     ///   Start Ble Advertising
     ///
     public func startBleAdvertising() {
+        if self.beaconManager.started {
+            fatalError("BLE advertising cannot be started because beacon scanning is currently active. Please stop scanning before attempting to advertise.")
+        }
         self.bleAdvertising.startAdvertising(short_id: self.identifier)
     }
     

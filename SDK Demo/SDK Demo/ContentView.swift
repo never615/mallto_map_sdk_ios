@@ -44,7 +44,7 @@ struct ContentView: View {
                         }
                     }) { Text(self.ble_start ? "停止广播" : "开始广播") }
                         .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
-                        .disabled(self.identifier.isEmpty)
+                        .disabled(self.identifier.isEmpty || self.start)
                     
                     Button(action: {
                         self.start = !self.start
@@ -61,7 +61,7 @@ struct ContentView: View {
                         }
                     }) { Text(self.start ? "停止扫描Beacon" : "开始扫描Beacon") }
                         .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
-                        .disabled(self.identifier.isEmpty)
+                        .disabled(self.identifier.isEmpty || self.ble_start)
                     
                     NavigationLink {
                         MapView(view: self.map.getMapview())
